@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="../index.html" class="navbar-brand ml-lg-3">
+            <img src="../img/logo.svg" alt="Mohammed R. Attia Logo" class="m-0 display-5" style="height: 50px; width: auto;">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="../index.html" class="nav-item nav-link active">Home</a>
+                <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+            </div>
+            <a href="html/about.html" class="btn btn-outline-primary d-none d-lg-block">About Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-7" id="about" style="min-height: 100vh;">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 pb-5 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="../img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Data Scientist & Competitive Programmer</h3>
+                    <p>I am Mohammed Ragab Saad Attia, an alumni of the <b> STEM High School for Boys in Giza, Egypt</b>, with a passion for computer science, data analysis, and machine learning. I am also an active competitive programmer from 2020. I won the <b>first place</b> in the 2023 National ISEF in Computational Biology and Bioinformatics. As <b>president of the STEM Egypt Hack Club</b>, I mentored students in competitive programming and machine learning. I am committed to innovation and education, consistently demonstrating leadership and excellence in my field.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-1"><h6><b>Name: </b><span class="text-secondary">Mohammed Ragab Saad Attia</span></h6></div>
+                        <div class="col-sm-6 py-1"><h6><b>Birthday: </b><span class="text-secondary">25 October 2005</span></h6></div>
+                        <div class="col-sm-6 py-1"><h6><b>Degree: </b><span class="text-secondary">STEM High School</span></h6></div>
+                        <div class="col-sm-6 py-1"><h6><b>Experience: </b><span class="text-secondary">5+ Years</span></h6></div>
+                        <div class="col-sm-6 py-1"><h6><b>Phone: </b><span class="text-secondary">+20 1128213583</span></h6></div>
+                        <div class="col-sm-6 py-1"><h6><b>Email: </b><span class="text-secondary">mohammedrattia@gmail.com</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-0 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/mohammedrattia"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/mohammedrattia/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="m-0">&copy; 2024 <a class="text-white font-weight-bold" href="#">mohammedrattia</a>. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/typed/typed.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../mail/jqBootstrapValidation.min.js"></script>
+    <script src="../mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
