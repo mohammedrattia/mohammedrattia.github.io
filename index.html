@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    
     <title>Mohammed R. Attia</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -38,8 +39,9 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="html/portfolio.html" class="nav-item nav-link">Portfolio</a>
                 <a href="html/blog.html" class="nav-item nav-link">Blog</a>
+                <a href="html/about.html" class="nav-item nav-link">About</a>
             </div>
-            <a href="html/about.html" class="btn btn-outline-primary d-none d-lg-block">About Me</a>
+            <button id="btnSwitch" class="btn btn-light btn-social mr-2"> <i class="fas fa-adjust"></i> </button>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -65,16 +67,16 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-7" id="home" style="min-height: 100vh;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                     <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Mohammed R. Attia</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <h3 class="text-white font-weight-normal mb-3">Hi, I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px var(--white);">Mohammed R. Attia</h1>
+                    <h1 class="display-4 typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">AI Engineer, Data Scientist, Competitive Programmer, Content Creator</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="https://drive.google.com/file/d/1OV3PdE6niBhPn-gxC_23cT1NJ-cTLtBm/view?usp=sharing" class="btn btn-outline-light mr-5">Download CV</a>
@@ -94,7 +96,7 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px var(--gray-light);">Gallery</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
             </div>
             <div class="row">
@@ -125,7 +127,7 @@
     <div class="container-fluid pt-5" id="blog">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px var(--gray-light);">Blog</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
             </div>
             <div class="row">
@@ -169,14 +171,15 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script> 
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>

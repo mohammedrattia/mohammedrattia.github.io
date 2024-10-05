@@ -1,13 +1,40 @@
 (function ($) {
     "use strict";
 
-    $(document).ready(function () {
-        // Check if we are on the about.html page
-        if (!window.location.href.includes('index.html')) {
-            // Always show the navbar on the about page
-            $('.navbar').css('display', 'flex'); // Ensure it's visible
+    
+    // Function to toggle dark/light mode and save preference
+    function toggleDarkMode() {
+        const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+        
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+            localStorage.setItem('theme', 'light'); // Save preference
         } else {
-            // Navbar scroll behavior for other pages
+            document.documentElement.setAttribute('data-bs-theme', 'dark');
+            localStorage.setItem('theme', 'dark'); // Save preference
+        }
+    }
+
+    // Check for saved user preference on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-bs-theme', savedTheme);
+        } else {
+            // Optionally set a default theme
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+        }
+    });
+
+    // Add event listener for the toggle button
+    document.getElementById('btnSwitch').addEventListener('click', toggleDarkMode);
+
+    // Navbar display
+    $(document).ready(function () {
+        if (!window.location.href.includes('index.html')) {
+            $('.navbar').css('display', 'flex');
+        } else {
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 200) {
                     $('.navbar').fadeIn('slow').css('display', 'flex');
@@ -16,25 +43,23 @@
                 }
             });
         }
-    });    
-
+    });
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
             }, 1500, 'easeInOutExpo');
-            
+
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
                 $(this).closest('a').addClass('active');
             }
         }
     });
-
+    
 
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {
