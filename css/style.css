@@ -15,7 +15,7 @@
   --gray-light-alt: #e6e6e6;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #0BCEAF;
+  --primary: #5a5ad8; /* #4747d4 #87A2FF #433878 #0BCEAF */
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -49,7 +49,7 @@
   --gray-light-alt: #7d7d7d;  /* Darker gray for dark mode */
   --gray: #dee2e6;          /* Light gray for dark mode */
   --gray-dark: #f8f9fa;     /* Light dark gray */
-  --primary: #0a8f92;       /* Darkened primary color */
+  --primary: #5a5ad8;       /* Darkened primary color */
   --secondary: #adb5bd;     /* Lighten secondary color for dark mode */
   --success: #28a745;       /* Keep success green */
   --info: #17a2b8;          /* Keep info cyan */
